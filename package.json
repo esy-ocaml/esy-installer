@@ -15,8 +15,8 @@
      "resolveAsRelativePath": true,
      "globalCollisionBehavior": "joinPath",
      "val": "./_build/ocamlfind/bin"
-   },
-  }
+   }
+  },
   "dependencies": {
     "nopam": "https://github.com/yunxing/nopam.git",
     "ocamlfind": "https://github.com/npm-opam/ocamlfind",
