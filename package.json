@@ -1,0 +1,25 @@
+{
+  "name": "opam-installer-bin",
+  "version": "0.0.0",
+  "description": "bin wrapper for opam-installer",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "eval $(dependencyEnv) && nopam && make install"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "exportedEnvVars": {
+   "PATH": {
+     "global": true,
+     "resolveAsRelativePath": true,
+     "globalCollisionBehavior": "joinPath",
+     "val": "./_build/ocamlfind/bin"
+   },
+  }
+  "dependencies": {
+    "nopam": "https://github.com/yunxing/nopam.git",
+    "ocamlfind": "https://github.com/npm-opam/ocamlfind",
+    "dependency-env": "https://github.com/npm-ml/dependency-env.git"
+  }
+}
