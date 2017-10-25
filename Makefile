@@ -15,4 +15,5 @@ endif
 
 install:
 	mkdir -p $(cur__bin)
-	cp -r vendor-$(PLATFORM)/bin/* $(cur__bin)/
+	cp -r bin/esy-installer $(cur__bin)/esy-installer
+	cp -r vendor-$(PLATFORM)/bin/* $(cur__bin)/opam-installer
