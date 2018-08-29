@@ -1,6 +1,6 @@
 .PHONY: install
 
-PLATFORM := unknown
+PLATFORM := cygwinNT10
 
 UNAME := $(shell uname -s)
 ifeq ($(UNAME),Linux)
