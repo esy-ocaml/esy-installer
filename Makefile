@@ -14,6 +14,8 @@ ifeq ($(UNAME),CYGWIN_NT-10.0)
 endif
 
 install:
+	echo UNAME: $(UNAME)
+	echo PLATFORM: $(PLATFORM)
 	mkdir -p $(cur__bin)
 	cp -r bin/esy-installer $(cur__bin)/esy-installer
 	cp -r vendor-$(PLATFORM)/bin/* $(cur__bin)/opam-installer
