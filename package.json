@@ -1,6 +1,6 @@
 {
   "name": "@esy-ocaml/esy-installer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "bin wrapper for opam-installer",
   "license": "MIT",
   "esy": {
