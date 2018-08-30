@@ -9,7 +9,7 @@ endif
 ifeq ($(UNAME),Darwin)
 	PLATFORM := darwin
 endif
-ifeq ($(UNAME),CYGWIN_NT-10.0)
+ifneq (,$(findstring CYGWIN,$(UNAME)))
 	PLATFORM := cygwinNT10
 endif
 
